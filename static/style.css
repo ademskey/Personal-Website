@@ -1,5 +1,5 @@
-/* General Styles */
 
+/*************************** GENERAL ********************************/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * { /* General for all (any padding is what I made */
@@ -9,4 +9,77 @@
 
 body { /* target html body */
     font-family: 'Poppins', sans-serif;
+}
+
+html { /* when quickscrolling to links, will be smooth */
+    scroll-behavior: smooth;
+}
+
+p { /* target all paragraph tags */
+    color: rgb(85,85,85)    
+}
+
+/* TRANSITIONS */
+a, .btn { /* a, means all links */
+    transition: all 0.3s ease;
+}
+
+/************************** DESKTOP NAV  *************************/
+nav,
+.nav-links { /* target the nav-links class */
+    display: flex;
+}
+nav { /* target the nav tag */
+    justify-content: space-around; /* space around the items */
+    align-items: center; /* center the items vertically */
+    height: 17vh; /* 17% of the viewport height */
+}
+
+/* REM = frontent measurement based on pixels */
+.nav-links { /* target the nav-links class */
+    gap: 2rem; /* 2rem gap between the items */
+    list-style: none; /* remove the bullet pts */
+    font-size: 1.5rem; /* 1.5rem font size */
+}
+
+a { /* target all links */
+    color: black;
+    text-decoration: none; /* remove the underline */
+    text-decoration-color: white;
+}
+
+a:hover { /* when hovering over a link */
+    color:grey;
+    text-decoration: underline;
+    text-underline-offset: .3rem;
+    text-decoration-thickness: .1rem;
+    text-decoration-color: rgb(181,181,181);
+}
+
+.logo { /* target the logo class */
+    font-size: 2rem; /* 2rem font size */
+    /*font-weight: 600;*/
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+/************************** HAMBURGER MENU  *************************/
+#hamburger-nav {
+    display: none; /* hide the hamburger menu */
+}
+
+.hamburger-menu { /* target the hamburger-menu class */
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
 }
