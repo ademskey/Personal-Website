@@ -19,14 +19,18 @@
             </ul>
         </div>
     </nav>
+    <!-- This is the navigation bar for smaller screens-->
     <nav id="hamburger-nav">
         <div class = "logo"> Adam Caudle </div>
+        <!-- Container for the hamburger menu and its functionality -->
         <div class = "hamburger-menu">
+             <!-- The clickable hamburger icion to toggle the menu -->
             <div class = "hamburger-icon" onclick="toggleMenu()">
                 <span></span> 
                 <span></span>
                 <span></span>
             </div>
+        <!-- Dropdown menu links appear/dissaper when the icon is clicked -->
         <div class="menu-links">
                 <li><a href="#About Me" onclick="toggleMenu()">About Me</a></li>
                 <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
@@ -35,6 +39,30 @@
          </div>
         </div>
     </nav>
+    <section id="Profile">
+        <div class="section__pic-container">
+            <img src="../media/headshot.jpeg" alt="Profile Picture" class="section__pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class=""title">Adam Caudle</h1>
+            <p class="section__text__p2">I'm an aspiring penetration tester and software engineer</p>
+            <div class="btn-container">
+                <button 
+                class="btn btn-color-2" 
+                onclick="window.open('../media/Resume.pdf')"
+                >Download Resume</button>
+                <button 
+                class="btn btn-color-1" 
+                onclick="location.href='./#contact'"
+                >Contact Info</button>
+            </div>
+            <div class="socials-container">
+                <img src="../media/linkedin.png" alt="My Linkedin Profile"
+                class="icon" onclick="location.href='https://www.linkedin.com/in/adam-caudle-0bab6a277'">
+            </div>
+        </div>
+    </section>
     <script src="../static/script.js" defer></script>
 </body>
 </html>
