@@ -9,6 +9,7 @@
 
 body { /* target html body */
     font-family: 'Poppins', sans-serif;
+    background-color: rgb(218,229,211);
 }
 
 html { /* when quickscrolling to links, will be smooth */
@@ -58,7 +59,7 @@ a:hover { /* when hovering over a link */
 
 .logo { /* target the logo class */
     font-size: 2rem; /* 2rem font size */
-    /*font-weight: 600;*/
+    font-weight: 600;
 }
 
 .logo:hover {
@@ -173,6 +174,14 @@ section {
     height: 400px;
     width: 400px;
     margin: auto 0;
+  }
+
+  .section__pic {
+    border-radius: 10%;
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+    width: 115%;
   }
   
   .section__text {
@@ -354,3 +363,7 @@ section {
   article .icon {
     cursor: default;
   }
+
+  /***************************** Projects ******************************/
+
+  
