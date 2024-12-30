@@ -1,3 +1,0 @@
-/static/* /static/:splat 200
-/media/* /media/:splat 200
-/* /templates/index.html 200
